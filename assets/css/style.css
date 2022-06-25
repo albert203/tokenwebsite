@@ -440,16 +440,16 @@ nav ul li a.active {
 
 .container img {
   position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 #mountains {
   top: 0;
-  left: 0%;
+  left: 0;
   width: 100%;
   height: 100%;
   z-index: -2;
-  -o-object-fit: cover;
-     object-fit: cover;
   filter: drop-shadow(1px 1px 3px rgba(42, 16, 85, 0.6862745098));
 }
 
@@ -457,14 +457,10 @@ nav ul li a.active {
   width: 100%;
   height: 100%;
   z-index: -3;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 #moon1 {
   mix-blend-mode: screen;
-  -o-object-fit: cover;
-     object-fit: cover;
   width: 10%;
   top: 15%;
   left: 40%;
