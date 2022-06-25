@@ -3,9 +3,11 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap'); */
 *, *::before, *::after {
   padding: 0;
-  margin: 0 auto;
+  margin: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+  overflow-x: clip;
 }
 
 /* setting view height to full screen with linear gradient */
@@ -31,7 +33,7 @@ nav ul {
 
 nav ul li {
   list-style: none;
-  margin-right: 20px;
+  margin-left: 20px;
 }
 
 nav ul li a {
@@ -436,40 +438,81 @@ nav ul li a.active {
   position: relative;
   width: 100%;
   height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background: linear-gradient(to top, #1c0522, transparent);
 }
 
 .container img {
   position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
+#text {
+  position: absolute;
+  color: #fff;
+  white-space: nowrap;
+  font-size: 7.5vw;
+  z-index: -7;
+}
+
 #mountains {
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -2;
-  filter: drop-shadow(1px 1px 3px rgba(42, 16, 85, 0.6862745098));
+  z-index: -8;
+  filter: drop-shadow(2px 0px 0px #fff);
 }
 
 #stars {
-  width: 100%;
-  height: 100%;
-  z-index: -3;
+  z-index: -10;
 }
 
-#moon1 {
+#moon {
   mix-blend-mode: screen;
-  width: 10%;
-  top: 15%;
-  left: 40%;
+  z-index: -9;
 }
 
 #landscape {
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
+  z-index: -6;
+}
+
+.button {
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 30px;
+  border-radius: 15px;
+  background: #fff;
+  color: #2b1055;
+  font-size: 1.5em;
+  transform: translateY(100px);
+}
+
+.sec {
+  position: relative;
+  padding: 100px;
+  background-color: #1c0522;
+}
+
+.sec h2 {
+  font-size: 3.5em;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.sec p {
+  font-size: 1.2em;
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */
