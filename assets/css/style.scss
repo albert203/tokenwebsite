@@ -1,0 +1,200 @@
+/* Sutogenerated text from */
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700');
+/* @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap'); */
+
+*, *::before, *::after {
+  padding: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* setting view height to full screen with linear gradient */
+body {
+  min-height: 100vh;
+  background: linear-gradient(#2b1055, #7597de);
+}
+
+//// codepen code change
+// body {
+//     background-color: black;
+//     height: 100vh; 
+//     display: grid;
+//     grid-template: 100% / 3fr repeat(54, 1fr) 3fr;
+//     overflow: hidden;
+//   }
+
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul{
+  display: inline-flex;
+}
+
+nav ul li{
+  list-style: none;
+  margin-right: 20px; 
+
+}
+
+nav ul li a{
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 6px 15px;
+}
+
+nav ul li a:hover{
+  background: #fff;
+  color: #2b1055;
+}
+
+nav ul li a.active{
+  background: #fff;
+  color: #2b1055;
+}
+
+nav .logo {
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+//when I hover over the navbar links its background color changes
+nav ul li a:hover,
+nav ul li a.active{
+    background: #fff;
+    color: #2b1055;
+    border-radius: 10px;
+}
+
+
+// .container{
+//   width: 100%;
+//   height: 100vh;
+// }
+
+// img{
+//   width: 100%;
+//   height: 100%;
+//   object-fit: fill; 
+// }
+
+
+//// codepen code change ////
+// section {   
+//   position: relative;
+//   display: grid;
+//   grid-template: 100%/3fr repeat(54, 1fr) 3fr;
+//   overflow: hidden;
+//   min-height: fit-content;
+//   margin-top: calc(100px + 20px);
+//   //css calculate the height of the nav and minus it from the height of the section
+//   min-height: calc(100vh);
+// }
+ 
+  .cell {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #fff1;
+    z-index: 2;
+  }
+  
+  @for $i from 0 to 56 {
+    .cell:nth-child(#{$i + 1}):hover ~ .content {
+      --partialString: "#{str-slice("Here we could have some hidden text", 1, $i + 1)}";
+      --size: 32px;
+      --color: #fff;
+    }
+  }
+  
+  .content {
+    --partialString: "Hover over the screen to reveal the text...";
+    --color: #333;
+    --size: px;
+  
+    position: absolute;
+    top: 0; right: 0; bottom: 120px; left: 0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 1em;
+  }
+  
+  .text:after {
+    content: var(--partialString);
+    font-family: 'Poppins', sans-serif;
+    font-size: var(--size);
+    color: var(--color);
+  }
+
+
+// container mountain bg image
+  .container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+  } 
+  
+  .container img{
+    position: absolute;
+
+  }
+
+  #mountains{
+    top: 0;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    object-fit: cover;
+    filter: drop-shadow(1px 1px 3px #2a1055af);
+  }
+
+  #stars{
+    width: 100%;
+    height: 100%;
+    z-index: -3;
+    object-fit: cover;
+  }
+
+  #moon1{
+    mix-blend-mode: screen;
+    object-fit: cover;
+    width: 10%;
+    top: 15%;  
+    left: 40%;
+  }
+
+  #landscape{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;  
+  }
+
+  // section img#moon2{
+  //   mix-blend-mode: screen;
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   width: 10%;
+  //   object-fit: cover;
+  //   z-index: -1;
+  // }
+
+  
+  

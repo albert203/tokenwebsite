@@ -1,14 +1,479 @@
-//import a poppins font 
-@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700');
-
-* {
-  margin: 0;
+/* Sutogenerated text from */
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700");
+/* @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap'); */
+*, *::before, *::after {
   padding: 0;
+  margin: 0 auto;
   box-sizing: border-box;
-  font-family: 'poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
+/* setting view height to full screen with linear gradient */
+body {
+  min-height: 100vh;
+  background: linear-gradient(#2b1055, #7597de);
+}
 
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
+nav ul {
+  display: inline-flex;
+}
 
+nav ul li {
+  list-style: none;
+  margin-right: 20px;
+}
 
+nav ul li a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 6px 15px;
+}
+
+nav ul li a:hover {
+  background: #fff;
+  color: #2b1055;
+}
+
+nav ul li a.active {
+  background: #fff;
+  color: #2b1055;
+}
+
+nav .logo {
+  color: #fff;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  background: #fff;
+  color: #2b1055;
+  border-radius: 10px;
+}
+
+.cell {
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.0666666667);
+  z-index: 2;
+}
+
+.cell:nth-child(1):hover ~ .content {
+  --partialString: "H";
+  --size: 32px;
+  --color: #fff;
+}
+
+.cell:nth-child(2):hover ~ .content {
+  --partialString: "He";
+  --size: 32px;
+  --color: #fff;
+}
+
+.cell:nth-child(3):hover ~ .content {
+  --partialString: "Her";
+  --size: 32px;
+  --color: #fff;
+}
+
+.cell:nth-child(4):hover ~ .content {
+  --partialString: "Here";
+  --size: 32px;
+  --color: #fff;
+}
+
+.cell:nth-child(5):hover ~ .content {
+  --partialString: "Here ";
+  --size: 32px;
+  --color: #fff;
+}
+
+.cell:nth-child(6):hover ~ .content {
+  --partialString: "Here w";
+  --size: 32px;
+  --color: #fff;
+}
+
+.cell:nth-child(7):hover ~ .content {
+  --partialString: "Here we";
+  --size: 32px;
+  --color: #fff;
+}
+
+.cell:nth-child(8):hover ~ .content {
+  --partialString: "Here we ";
+  --size: 32px;
+  --color: #fff;
+}
+
+.cell:nth-child(9):hover ~ .content {
+  --partialString: "Here we c";
+  --size: 32px;
+  --color: #fff;
+}
+
+.cell:nth-child(10):hover ~ .content {
+  --partialString: "Here we co";
+  --size: 32px;
+  --color: #fff;
+}
+
+.cell:nth-child(11):hover ~ .content {
+  --partialString: "Here we cou";
+  --size: 32px;
+  --color: #fff;
+}
+
+.cell:nth-child(12):hover ~ .content {
+  --partialString: "Here we coul";
+  --size: 32px;
+  --color: #fff;
+}
+
+.cell:nth-child(13):hover ~ .content {
+  --partialString: "Here we could";
+  --size: 32px;
+  --color: #fff;
+}
+
+.cell:nth-child(14):hover ~ .content {
+  --partialString: "Here we could ";
+  --size: 32px;
+  --color: #fff;
+}
+
+.cell:nth-child(15):hover ~ .content {
+  --partialString: "Here we could h";
+  --size: 32px;
+  --color: #fff;
+}
+
+.cell:nth-child(16):hover ~ .content {
+  --partialString: "Here we could ha";
+  --size: 32px;
+  --color: #fff;
+}
+
+.cell:nth-child(17):hover ~ .content {
+  --partialString: "Here we could hav";
+  --size: 32px;
+  --color: #fff;
+}
+
+.cell:nth-child(18):hover ~ .content {
+  --partialString: "Here we could have";
+  --size: 32px;
+  --color: #fff;
+}
+
+.cell:nth-child(19):hover ~ .content {
+  --partialString: "Here we could have ";
+  --size: 32px;
+  --color: #fff;
+}
+
+.cell:nth-child(20):hover ~ .content {
+  --partialString: "Here we could have s";
+  --size: 32px;
+  --color: #fff;
+}
+
+.cell:nth-child(21):hover ~ .content {
+  --partialString: "Here we could have so";
+  --size: 32px;
+  --color: #fff;
+}
+
+.cell:nth-child(22):hover ~ .content {
+  --partialString: "Here we could have som";
+  --size: 32px;
+  --color: #fff;
+}
+
+.cell:nth-child(23):hover ~ .content {
+  --partialString: "Here we could have some";
+  --size: 32px;
+  --color: #fff;
+}
+
+.cell:nth-child(24):hover ~ .content {
+  --partialString: "Here we could have some ";
+  --size: 32px;
+  --color: #fff;
+}
+
+.cell:nth-child(25):hover ~ .content {
+  --partialString: "Here we could have some h";
+  --size: 32px;
+  --color: #fff;
+}
+
+.cell:nth-child(26):hover ~ .content {
+  --partialString: "Here we could have some hi";
+  --size: 32px;
+  --color: #fff;
+}
+
+.cell:nth-child(27):hover ~ .content {
+  --partialString: "Here we could have some hid";
+  --size: 32px;
+  --color: #fff;
+}
+
+.cell:nth-child(28):hover ~ .content {
+  --partialString: "Here we could have some hidd";
+  --size: 32px;
+  --color: #fff;
+}
+
+.cell:nth-child(29):hover ~ .content {
+  --partialString: "Here we could have some hidde";
+  --size: 32px;
+  --color: #fff;
+}
+
+.cell:nth-child(30):hover ~ .content {
+  --partialString: "Here we could have some hidden";
+  --size: 32px;
+  --color: #fff;
+}
+
+.cell:nth-child(31):hover ~ .content {
+  --partialString: "Here we could have some hidden ";
+  --size: 32px;
+  --color: #fff;
+}
+
+.cell:nth-child(32):hover ~ .content {
+  --partialString: "Here we could have some hidden t";
+  --size: 32px;
+  --color: #fff;
+}
+
+.cell:nth-child(33):hover ~ .content {
+  --partialString: "Here we could have some hidden te";
+  --size: 32px;
+  --color: #fff;
+}
+
+.cell:nth-child(34):hover ~ .content {
+  --partialString: "Here we could have some hidden tex";
+  --size: 32px;
+  --color: #fff;
+}
+
+.cell:nth-child(35):hover ~ .content {
+  --partialString: "Here we could have some hidden text";
+  --size: 32px;
+  --color: #fff;
+}
+
+.cell:nth-child(36):hover ~ .content {
+  --partialString: "Here we could have some hidden text";
+  --size: 32px;
+  --color: #fff;
+}
+
+.cell:nth-child(37):hover ~ .content {
+  --partialString: "Here we could have some hidden text";
+  --size: 32px;
+  --color: #fff;
+}
+
+.cell:nth-child(38):hover ~ .content {
+  --partialString: "Here we could have some hidden text";
+  --size: 32px;
+  --color: #fff;
+}
+
+.cell:nth-child(39):hover ~ .content {
+  --partialString: "Here we could have some hidden text";
+  --size: 32px;
+  --color: #fff;
+}
+
+.cell:nth-child(40):hover ~ .content {
+  --partialString: "Here we could have some hidden text";
+  --size: 32px;
+  --color: #fff;
+}
+
+.cell:nth-child(41):hover ~ .content {
+  --partialString: "Here we could have some hidden text";
+  --size: 32px;
+  --color: #fff;
+}
+
+.cell:nth-child(42):hover ~ .content {
+  --partialString: "Here we could have some hidden text";
+  --size: 32px;
+  --color: #fff;
+}
+
+.cell:nth-child(43):hover ~ .content {
+  --partialString: "Here we could have some hidden text";
+  --size: 32px;
+  --color: #fff;
+}
+
+.cell:nth-child(44):hover ~ .content {
+  --partialString: "Here we could have some hidden text";
+  --size: 32px;
+  --color: #fff;
+}
+
+.cell:nth-child(45):hover ~ .content {
+  --partialString: "Here we could have some hidden text";
+  --size: 32px;
+  --color: #fff;
+}
+
+.cell:nth-child(46):hover ~ .content {
+  --partialString: "Here we could have some hidden text";
+  --size: 32px;
+  --color: #fff;
+}
+
+.cell:nth-child(47):hover ~ .content {
+  --partialString: "Here we could have some hidden text";
+  --size: 32px;
+  --color: #fff;
+}
+
+.cell:nth-child(48):hover ~ .content {
+  --partialString: "Here we could have some hidden text";
+  --size: 32px;
+  --color: #fff;
+}
+
+.cell:nth-child(49):hover ~ .content {
+  --partialString: "Here we could have some hidden text";
+  --size: 32px;
+  --color: #fff;
+}
+
+.cell:nth-child(50):hover ~ .content {
+  --partialString: "Here we could have some hidden text";
+  --size: 32px;
+  --color: #fff;
+}
+
+.cell:nth-child(51):hover ~ .content {
+  --partialString: "Here we could have some hidden text";
+  --size: 32px;
+  --color: #fff;
+}
+
+.cell:nth-child(52):hover ~ .content {
+  --partialString: "Here we could have some hidden text";
+  --size: 32px;
+  --color: #fff;
+}
+
+.cell:nth-child(53):hover ~ .content {
+  --partialString: "Here we could have some hidden text";
+  --size: 32px;
+  --color: #fff;
+}
+
+.cell:nth-child(54):hover ~ .content {
+  --partialString: "Here we could have some hidden text";
+  --size: 32px;
+  --color: #fff;
+}
+
+.cell:nth-child(55):hover ~ .content {
+  --partialString: "Here we could have some hidden text";
+  --size: 32px;
+  --color: #fff;
+}
+
+.cell:nth-child(56):hover ~ .content {
+  --partialString: "Here we could have some hidden text";
+  --size: 32px;
+  --color: #fff;
+}
+
+.content {
+  --partialString: "Hover over the screen to reveal the text...";
+  --color: #333;
+  --size: px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 120px;
+  left: 0;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 1em;
+}
+
+.text:after {
+  content: var(--partialString);
+  font-family: "Poppins", sans-serif;
+  font-size: var(--size);
+  color: var(--color);
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.container img {
+  position: absolute;
+}
+
+#mountains {
+  top: 0;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  z-index: -2;
+  -o-object-fit: cover;
+     object-fit: cover;
+  filter: drop-shadow(1px 1px 3px rgba(42, 16, 85, 0.6862745098));
+}
+
+#stars {
+  width: 100%;
+  height: 100%;
+  z-index: -3;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#moon1 {
+  mix-blend-mode: screen;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 10%;
+  top: 15%;
+  left: 40%;
+}
+
+#landscape {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}/*# sourceMappingURL=style.css.map */
