@@ -25,6 +25,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 1000;
 }
 
 nav ul {
@@ -462,6 +463,7 @@ nav ul li a.active {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  pointer-events: none;
 }
 
 #text {
@@ -470,25 +472,19 @@ nav ul li a.active {
   color: #fff;
   white-space: nowrap;
   font-size: 7.5vw;
-  z-index: -7;
+  z-index: 9;
 }
 
 #mountains {
-  z-index: -8;
   filter: drop-shadow(2px 0px 0px #fff);
-}
-
-#stars {
-  z-index: -10;
 }
 
 #moon {
   mix-blend-mode: screen;
-  z-index: -9;
 }
 
 #landscape {
-  z-index: -6;
+  z-index: 10;
 }
 
 .button {
@@ -500,7 +496,7 @@ nav ul li a.active {
   color: #2b1055;
   font-size: 1.5em;
   transform: translateY(100px);
-  z-index: -7;
+  z-index: 9;
 }
 
 .sec {
