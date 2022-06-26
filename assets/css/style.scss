@@ -152,6 +152,7 @@ nav ul li a.active{
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
   } 
 
   .container::before{
@@ -174,6 +175,7 @@ nav ul li a.active{
 
   #text{
     position: absolute;
+    right: -200px;
     color: #fff;
     white-space: nowrap; 
     font-size: 7.5vw;
@@ -207,6 +209,7 @@ nav ul li a.active{
     color: #2b1055;
     font-size: 1.5em;
     transform: translateY(100px);
+    z-index: -7;
   }
 
   .sec{
